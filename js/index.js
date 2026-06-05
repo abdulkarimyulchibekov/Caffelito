@@ -1,5 +1,4 @@
 let translations;
-console.log(45);
 
 fetch("./js/translations.json")
 .then(res => res.json())
@@ -35,3 +34,13 @@ function setLanguage(lang) {
   });
   // Put your JSON translation code here
 }
+
+// ===================== App btn ================
+
+document.getElementById("downloadBtn").addEventListener("click", () => {
+    window.location.href = "https://yetkazamiz.uz/uz/restaurant/69df505c78fc948d8a3cec0a";
+});
+
+document.getElementById("Telegram__bot").addEventListener("click", () => {
+  window.location.href = "https://t.me/yetkazamizuz_bot";
+});
