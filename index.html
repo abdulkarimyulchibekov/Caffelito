@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap" rel="stylesheet">
+  <title>Caffelito</title>
+</head>
+<body>
+  <!-- <header class="main__header">
+    <div class="container">
+      <div class="header">
+        <h1 class="main__title">
+          <a class="header__link" href="/">
+            Caffelito
+          </a>
+        </h1>
+        <div class="header__group">
+          <button class="change_to_uz lang-switch" onclick="setLang('uzb')">UZ</button>
+          <button class="change_to_ru lang-switch" onclick="setLang('rus')">RUS</button>
+        </div>
+      </div>
+    </div>
+  </header> -->
+  
+  <main>
+    <div class="hero">
+      <div class="background-slider">
+        <img src="./image/nomer1.jpg" alt="">
+        <img src="./image/nomer8.jpg" alt="">
+        <img src="./image/nomer7.jpg" alt="">
+        <img src="./image/nomer6.jpg" alt="">
+        <img src="./image/nomer5.jpg" alt="">
+      </div>
+      
+      <div class="overlay"></div>
+      <div class="container content">
+        <h1 class="main__title">
+          <a class="header__link" href="/">
+            Caffelito
+          </a>
+        </h1>
+        <h2 data-i18n="hero__title" class="hero__title title"></h2>
+        <button class="hero__app app">
+          <svg class="app__picture" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 1024 1024"><path fill="#000000" d="M678 832H346q-47-33-89-76q-34 12-65 12q-80 0-136-56.5T0 576q0-63 37-112.5t95-69.5q1-6 1-10h758q5 35 5 128q0 45-21 94t-55 91t-69.5 75.5T678 832zM128 512q0-15 1-47q-30 17-47.5 46.5T64 576q0 53 37.5 90.5T192 704q4 0 16-2q-80-101-80-190zm448-320q0 23 9 55q39 28 51 73h-64q-2-14-5-24q-55-38-55-104q0-53 37.5-90.5T640 64q15 0 32 4q-42 11-69 45t-27 79zm-192-64q0 23 9 55q55 39 55 105q0 14-5 32h-63q4-18 4-32q0-24-9-56q-55-38-55-104q0-53 37.5-90.5T448 0q15 0 32 4q-42 11-69 45t-27 79zm384 896H256q-55 0-116-21.5t-100.5-52T0 896h1024q0 24-39.5 54.5t-100.5 52t-116 21.5z"/></svg>
+          <span data-i18n="app__content" class="app__content"></span>
+          <svg class="app_arrow" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 15 15">
+            <path fill="#000000" d="M8.293 2.293a1 1 0 0 1 1.414 0l4.5 4.5a1 1 0 0 1 0 1.414l-4.5 4.5a1 1 0 0 1-1.414-1.414L11 8.5H1.5a1 1 0 0 1 0-2H11L8.293 3.707a1 1 0 0 1 0-1.414Z"/>
+          </svg>
+        </button>
+        <button class="hero__telegram telegram">
+          <svg class="telegram__picture" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"><path fill="#000000" d="m21.936 5.17l-3.03 14.185c-.226.999-.806 1.224-1.644.773l-4.545-3.352l-2.225 2.127c-.225.226-.451.452-.967.452l.355-4.675l8.478-7.704c.354-.355-.097-.484-.548-.193l-10.541 6.64l-4.546-1.386c-.999-.322-.999-1 .226-1.45L20.614 3.72c.87-.258 1.612.194 1.322 1.45"/></svg>
+          <span data-i18n="telegram__content" class="telegram__content"></span>
+          <svg class="telegram__arrow" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 15 15">
+            <path fill="#000000" d="M8.293 2.293a1 1 0 0 1 1.414 0l4.5 4.5a1 1 0 0 1 0 1.414l-4.5 4.5a1 1 0 0 1-1.414-1.414L11 8.5H1.5a1 1 0 0 1 0-2H11L8.293 3.707a1 1 0 0 1 0-1.414Z"/>
+          </svg>
+        </button>
+        <div class="hero__footer">
+          <svg class="hero__coffee" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24"><g fill="#FFD040"><path stroke="#000000" stroke-width="2" d="M6.264 20.192c4.096 2.868 8.602-.081 11.47-4.177c2.868-4.095 4.097-9.338.002-12.206c-4.096-2.868-8.602.08-11.47 4.176c-2.868 4.096-4.098 9.339-.002 12.207Z"/><path fill="#000000" d="M16.589 5.447c-1.393.246-5.326 2.375-5.408 5.98c-.083 3.604-2.787 6.594-3.77 7.126c1.803.042 5.326-2.375 5.408-5.98c.083-3.604 2.786-6.594 3.77-7.126Z"/></g></svg>
+          <p data-i18n="hero__text" class="hero__text"></p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- <div class="image__container">
+      <img src="./image/nomer1.jpg" alt="Pictures of seasonal drinks from Caffelito">
+    </div> -->
+  </main>
+  
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__box">
+        <a class="footer__title" href="/">Caffelito</a>
+        <p data-i18n="footer__explanation" class="footer__explanation"></p>
+        <p data-i18n="footer__contact" class="footer__contact"></p>
+        <a href="mailto:hello@caffelito.uz" class="footer__email">hello@caffelito.uz</a>
+        <a href="tel:+998932539996" class="footer__call">
+          <span>+998 93 253 99 96</span>
+        </a>
+        <div class="footer__social-media">
+          <a target="_blank" href="https://www.instagram.com/caffelito.almalyk/" class="footer__instagram-link">
+            <svg class="footer__instagram" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path fill="#fff" d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3Z"/></svg>
+          </a>
+          <a target="_blank" href="https://yandex.uz/maps/org/caffelito_coffee/138576687026/?ll=69.599429%2C40.851000&z=16" class="footer__yandex-link">
+            <svg class="footer__yandex" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 12 24"><path fill="#fff" d="M7.083 14.8L2.985 24H-.001l4.5-9.834C2.385 13.092.974 11.148.974 7.552C.969 2.518 4.159.001 7.953.001h3.858v24H9.229v-9.2H7.083zM9.23 2.18H7.852c-2.08 0-4.097 1.378-4.097 5.372c0 3.858 1.847 5.1 4.097 5.1H9.23z"/></svg>
+          </a>
+          <a target="_blank" href="https://caffelito.coffee/" class="footer__website-link">
+            <svg class="footer_website" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 2048 2048"><path fill="#fff" d="M1024 0q141 0 272 36t245 103t207 160t160 208t103 245t37 272q0 141-36 272t-103 245t-160 207t-208 160t-245 103t-272 37q-141 0-272-36t-245-103t-207-160t-160-208t-103-244t-37-273q0-141 36-272t103-245t160-207t208-160T751 37t273-37zm0 1920q123 0 237-32t214-90t182-141t140-181t91-214t32-238q0-123-32-237t-90-214t-141-182t-181-140t-214-91t-238-32q-123 0-237 32t-214 90t-182 141t-140 181t-91 214t-32 238q0 123 32 237t90 214t141 182t181 140t214 91t238 32zm597-880l48-144h75l-85 256h-75l-48-144l-48 144h-75l-85-256h75l48 144l48-144h74l48 144zm-464-144h75l-85 256h-75l-48-144l-48 144h-75l-85-256h75l48 144l48-144h74l48 144l48-144zm-512 0h75l-85 256h-75l-48-144l-48 144h-75l-85-256h75l48 144l48-144h74l48 144l48-144z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer__copyright">
+        <svg class="footer__copyright-img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 1024 1024"><path fill="#fff" d="M512 1024q-139 0-257-68.5T68.5 769T0 512t68.5-257T255 68.5T512 0t257 68.5T955.5 255t68.5 257t-68.5 257T769 955.5T512 1024zm0-896q-104 0-192.5 51.5t-140 140T128 512t51.5 192.5t140 140T512 896t192.5-51.5t140-140T896 512t-51.5-192.5t-140-140T512 128zm222 304q-6 21-23 34.5T672 480q-8 0-16-3t-13-6t-11.5-10t-9-10t-7-10.5t-5.5-8.5q-39-48-98-48q-53 0-90.5 37.5T384 512t37.5 90.5T512 640q59 0 98-48q2-2 9.5-13.5t12.5-17t16-11.5t24-6q22 0 39 13.5t23 34.5q1 4 2 11t-3.5 23.5T714 656q-37 50-90 81t-112 31q-106 0-181-75t-75-181t75-181t181-75q61 0 114.5 31.5T717 371q12 11 16 26.5t2 25.5z"/></svg>
+        <div data-i18n="footer__copyright-content" class="footer__copyright-content">
+          2025 Caffelito. Сварено специально для вас
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <script src="./js/index.js"></script>
+  
+</body>
+</html>

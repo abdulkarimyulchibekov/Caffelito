@@ -1,0 +1,20 @@
+{
+  "uzb": {
+    "app__content": "Ilova orqali buyurtma bering",
+    "telegram__content": "Telegram orqali buyurtma bering",
+    "hero__text": "Siz uchun maxsus",
+    "hero__title": "Bugungi qahvangizni ichdingizmi?",
+    "footer__contact": "Biz bilan bog'lanish",
+    "footer__explanation": "Sevimli qahvangizni olib keting",
+    "footer__copyright-content": "2025 Caffelito. Siz uchun maxsus tayyorlangan"
+  },
+  "rus": {
+    "app__content": "Заказать через приложение",
+    "telegram__content": "Заказать через Telegram",
+    "hero__text": "Специально для вас",
+    "hero__title": "Кофе в моде, при любой погоде",
+    "footer__contact": "Связаться с нами",
+    "footer__explanation": "Возьми кофе с собой",
+    "footer__copyright-content": "2025 Caffelito. Сварено специально для вас"
+  }
+}
